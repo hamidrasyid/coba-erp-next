@@ -1,0 +1,197 @@
+19:26:14 Worker rq:worker:21684a4b20c145c2876307ec09f8cac0.MacBooks-Air-2.lan.73746.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: started, version 1.8.1
+19:26:14 Subscribing to channel rq:pubsub:21684a4b20c145c2876307ec09f8cac0.MacBooks-Air-2.lan.73746.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long
+19:26:14 *** Listening on Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long...
+19:26:14 Cleaning registries for queue: Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long
+19:26:14 Worker rq:worker:29c25f0952f44ad0ace4abc750d3d6d2.MacBooks-Air-2.lan.73742.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: started, version 1.8.1
+19:26:14 Subscribing to channel rq:pubsub:29c25f0952f44ad0ace4abc750d3d6d2.MacBooks-Air-2.lan.73742.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default
+19:26:14 *** Listening on Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default...
+19:26:14 Cleaning registries for queue: Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default
+19:26:14 Worker rq:worker:42d28d1dd456482b852ecb72587d9e6e.MacBooks-Air-2.lan.73748.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:short: started, version 1.8.1
+19:26:14 Subscribing to channel rq:pubsub:42d28d1dd456482b852ecb72587d9e6e.MacBooks-Air-2.lan.73748.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:short
+19:26:14 *** Listening on Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:short...
+19:26:14 Cleaning registries for queue: Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:short
+19:27:50 Warm shut down requested
+19:27:50 Warm shut down requested
+19:27:50 Warm shut down requested
+19:31:26 Worker rq:worker:84c95c48315e4bbfb08a9b533c202e24.MacBooks-Air-2.lan.78417.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: started, version 1.8.1
+19:31:26 Subscribing to channel rq:pubsub:84c95c48315e4bbfb08a9b533c202e24.MacBooks-Air-2.lan.78417.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default
+19:31:26 *** Listening on Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default...
+19:31:26 Cleaning registries for queue: Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default
+19:31:26 Worker rq:worker:dd600b7f88c4444798ec2d89903a3f47.MacBooks-Air-2.lan.78413.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: started, version 1.8.1
+19:31:26 Subscribing to channel rq:pubsub:dd600b7f88c4444798ec2d89903a3f47.MacBooks-Air-2.lan.78413.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long
+19:31:26 *** Listening on Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long...
+19:31:26 Cleaning registries for queue: Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long
+19:31:26 Worker rq:worker:087cc93403db418c8feb2a9b7b91bcf9.MacBooks-Air-2.lan.78416.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:short: started, version 1.8.1
+19:31:26 Subscribing to channel rq:pubsub:087cc93403db418c8feb2a9b7b91bcf9.MacBooks-Air-2.lan.78416.Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:short
+19:31:26 *** Listening on Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:short...
+19:31:26 Cleaning registries for queue: Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:short
+19:34:39 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.create_contact', kwargs={'user': <User: admin@database.com>, 'ignore_mandatory': True}, method='frappe.core.doctype.user.user.create_contact', site='site1.local', user='Administrator') (4e005d45-2018-4a65-98d3-53bd85a07383)
+Traceback (most recent call last):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/core/doctype/user/user.py", line 1184, in create_contact
+    contact.insert(ignore_permissions=True, ignore_links=ignore_links, ignore_mandatory=ignore_mandatory)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/model/document.py", line 229, in insert
+    self._validate_links()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/model/document.py", line 828, in _validate_links
+    frappe.throw(_("Could not find {0}").format(msg),
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/__init__.py", line 434, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/__init__.py", line 413, in msgprint
+    _raise_exception()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/__init__.py", line 367, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.LinkValidationError: Could not find User Id: admin@database.com
+
+19:34:41 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.update_gravatar', kwargs={'name': 'admin@database.com'}, method='frappe.core.doctype.user.user.update_gravatar', site='site1.local', user='Administrator') (2d870d7b-5054-441a-bdc9-8519079d2e2b)
+19:34:41 Moving job to FailedJobRegistry (work-horse terminated unexpectedly; waitpid returned 6)
+19:34:41 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.create_contact', kwargs={'user': <User: admin@database.com>, 'ignore_mandatory': True}, method='frappe.core.doctype.user.user.create_contact', site='site1.local', user='Administrator') (ed41a9a3-13fc-422e-a568-175f5f72d503)
+19:34:42 Moving job to FailedJobRegistry (work-horse terminated unexpectedly; waitpid returned 6)
+19:34:42 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.update_gravatar', kwargs={'name': 'admin@database.com'}, method='frappe.core.doctype.user.user.update_gravatar', site='site1.local', user='Administrator') (71fdffde-1bd5-491c-b282-1b569f70ce84)
+19:34:43 Moving job to FailedJobRegistry (work-horse terminated unexpectedly; waitpid returned 6)
+19:35:29 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.s3_backup_settings.s3_backup_sett..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (979f2729-0232-40a5-9ed9-e51a543c5f95)
+19:35:29 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.social.doctype.energy_point_log.energy_point_log.send_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (fe7084ce-91a7-4efc-bd24-a92af3447f8d)
+19:35:31 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (fe7084ce-91a7-4efc-bd24-a92af3447f8d)
+19:35:31 Result is kept for 500 seconds
+19:35:31 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.auto_email_report.auto_email_report.send..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (89e47796-dd34-4fb0-94f3-298319b569c4)
+19:35:31 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (979f2729-0232-40a5-9ed9-e51a543c5f95)
+19:35:31 Result is kept for 500 seconds
+19:35:31 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_drive.google_drive.weekly_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (53c75e2b-7d4c-4420-9bb6-2fcda78e56d8)
+19:35:32 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (53c75e2b-7d4c-4420-9bb6-2fcda78e56d8)
+19:35:32 Result is kept for 500 seconds
+19:35:32 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.social.doctype.energy_point_log.energy_point_log.send_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (ff8553d3-14a4-4051-8d3d-68c721c6f630)
+19:35:33 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (ff8553d3-14a4-4051-8d3d-68c721c6f630)
+19:35:33 Result is kept for 500 seconds
+19:35:33 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_weekly_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (e1e59df6-eeae-4da3-8d4a-f37de6c3e101)
+19:35:34 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (e1e59df6-eeae-4da3-8d4a-f37de6c3e101)
+19:35:34 Result is kept for 500 seconds
+19:35:34 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.doctype.route_history.route_history.flush_old_rou..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (e6ada915-c3b7-4fb1-94f3-e89a206057c8)
+19:35:35 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (e6ada915-c3b7-4fb1-94f3-e89a206057c8)
+19:35:35 Result is kept for 500 seconds
+19:35:35 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.s3_backup_settings.s3_backup_sett..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (778671c2-1125-4f69-8662-549dee7616a2)
+19:35:37 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (778671c2-1125-4f69-8662-549dee7616a2)
+19:35:37 Result is kept for 500 seconds
+19:35:37 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.dropbox_settings.dropbox_settings..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (7dced688-090f-4a46-8908-9ee1f5301b3d)
+19:35:38 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (7dced688-090f-4a46-8908-9ee1f5301b3d)
+19:35:38 Result is kept for 500 seconds
+19:35:38 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_drive.google_drive.daily_b..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (3670bd19-916d-49b2-8c98-c5858c2d7ebc)
+19:35:39 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (3670bd19-916d-49b2-8c98-c5858c2d7ebc)
+19:35:39 Result is kept for 500 seconds
+19:35:39 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.s3_backup_settings.s3_backup_sett..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (41c8d686-0f99-4446-8d39-262385e30d31)
+19:35:40 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (41c8d686-0f99-4446-8d39-262385e30d31)
+19:35:40 Result is kept for 500 seconds
+19:35:40 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.change_log.check_for_update'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (0db3a76c-2f65-4a24-8ee1-e66b8f0c248f)
+19:35:41 Moving job to FailedJobRegistry (work-horse terminated unexpectedly; waitpid returned 6)
+19:35:41 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.dropbox_settings.dropbox_settings..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (f25276c3-00a2-4e0d-82a9-8938cadddd15)
+19:35:42 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:long: Job OK (f25276c3-00a2-4e0d-82a9-8938cadddd15)
+19:35:42 Result is kept for 500 seconds
+19:35:48 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (89e47796-dd34-4fb0-94f3-298319b569c4)
+19:35:48 Result is kept for 500 seconds
+19:35:48 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.core.doctype.log_settings.log_settings.run_log_clean_u..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (d8b6f6b9-9a3d-44f6-aa79-0cc889a65a8a)
+19:35:49 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (d8b6f6b9-9a3d-44f6-aa79-0cc889a65a8a)
+19:35:49 Result is kept for 500 seconds
+19:35:49 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.core.doctype.prepared_report.prepared_report.delete_ex..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (b053cde7-5ec3-437d-91ec-604683409f4e)
+19:35:49 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (b053cde7-5ec3-437d-91ec-604683409f4e)
+19:35:49 Result is kept for 500 seconds
+19:35:49 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.unhandled_email.unhandled_email.remove_o..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (f472067f-dde2-4ecd-949a-4e3a6eab4574)
+19:35:50 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (f472067f-dde2-4ecd-949a-4e3a6eab4574)
+19:35:50 Result is kept for 500 seconds
+19:35:50 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_re..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (00d75d34-3833-4395-90e3-5edabbf9638a)
+19:35:52 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (00d75d34-3833-4395-90e3-5edabbf9638a)
+19:35:52 Result is kept for 500 seconds
+19:35:52 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_r..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (86a23d8e-b434-4737-8ba8-546c91f30872)
+19:35:53 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (86a23d8e-b434-4737-8ba8-546c91f30872)
+19:35:53 Result is kept for 500 seconds
+19:35:53 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_contacts.google_contacts.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (73467681-4464-4ea3-a406-32ffbb357eb5)
+19:35:54 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (73467681-4464-4ea3-a406-32ffbb357eb5)
+19:35:54 Result is kept for 500 seconds
+19:35:54 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.social.doctype.energy_point_settings.energy_point_sett..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (8229b439-b941-4576-ae61-a1ad0d99ce39)
+19:35:55 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (8229b439-b941-4576-ae61-a1ad0d99ce39)
+19:35:55 Result is kept for 500 seconds
+19:35:55 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_daily_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (e42fdc5c-a3d8-4ca0-944f-5db4884ef76f)
+19:35:56 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (e42fdc5c-a3d8-4ca0-944f-5db4884ef76f)
+19:35:56 Result is kept for 500 seconds
+19:35:56 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.personal_data_deletion_request.persona..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (1044f2d3-643d-41ab-a30f-1a0516b26c47)
+19:35:57 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (1044f2d3-643d-41ab-a30f-1a0516b26c47)
+19:35:57 Result is kept for 500 seconds
+19:35:57 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.auto_email_report.auto_email_report.send..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (5df034c5-a958-48a8-9026-b9899c07c55d)
+19:35:59 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (5df034c5-a958-48a8-9026-b9899c07c55d)
+19:35:59 Result is kept for 500 seconds
+19:35:59 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.scheduler.restrict_scheduler_events_if_dormant'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (0128724b-cca0-4b2b-980f-907da513e54e)
+19:36:00 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (0128724b-cca0-4b2b-980f-907da513e54e)
+19:36:00 Result is kept for 500 seconds
+19:36:00 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.notification.notification.trigger_daily_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (e7068d06-e7e8-464d-ae98-bd2f7328a2b6)
+19:36:01 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (e7068d06-e7e8-464d-ae98-bd2f7328a2b6)
+19:36:01 Result is kept for 500 seconds
+19:36:01 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.sessions.clear_expired_sessions'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (02bf0458-8586-49c9-9c5d-4914e4568dd0)
+19:36:02 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (02bf0458-8586-49c9-9c5d-4914e4568dd0)
+19:36:02 Result is kept for 500 seconds
+19:36:02 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.doctype.event.event.send_event_digest'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (0536fbf6-37a8-4ae5-a3cb-9c826fda0c05)
+19:36:03 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (0536fbf6-37a8-4ae5-a3cb-9c826fda0c05)
+19:36:03 Result is kept for 500 seconds
+19:36:03 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.core.doctype.error_log.error_log.set_old_logs_as_seen'..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (bcbd96e8-5b97-4182-af47-ce707f872578)
+19:36:04 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (bcbd96e8-5b97-4182-af47-ce707f872578)
+19:36:04 Result is kept for 500 seconds
+19:36:04 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.notifications.clear_notifications'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (bd827935-937b-4c03-a8a4-34b1b171a1a6)
+19:36:05 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (bd827935-937b-4c03-a8a4-34b1b171a1a6)
+19:36:05 Result is kept for 500 seconds
+19:36:05 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.set_expiry_for_email_queue'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (6657f900-cc75-4d00-b310-49ec80b94600)
+19:36:05 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (6657f900-cc75-4d00-b310-49ec80b94600)
+19:36:05 Result is kept for 500 seconds
+19:36:05 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.newsletter.newsletter.send_scheduled_ema..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (8409c92f-0fb3-46e2-b2e4-03048e3e3fa2)
+19:36:06 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (8409c92f-0fb3-46e2-b2e4-03048e3e3fa2)
+19:36:06 Result is kept for 500 seconds
+19:36:06 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_calendar.google_calendar.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (32de6cd7-92bb-4980-bc95-7404911c2226)
+19:36:07 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (32de6cd7-92bb-4980-bc95-7404911c2226)
+19:36:07 Result is kept for 500 seconds
+19:36:07 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_hourly_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (3360f0dd-9a29-41a4-bb0b-ab30ff2f600e)
+19:36:08 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (3360f0dd-9a29-41a4-bb0b-ab30ff2f600e)
+19:36:08 Result is kept for 500 seconds
+19:36:08 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.deferred_insert.save_to_db'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (cdbd9879-1b4d-4ca0-8092-bf7510adfdd0)
+19:36:09 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (cdbd9879-1b4d-4ca0-8092-bf7510adfdd0)
+19:36:09 Result is kept for 500 seconds
+19:36:09 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.page.backups.backups.delete_downloadable_backups'..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (2e26041c-17e4-4e2d-993d-04464e0ed15a)
+19:36:10 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (2e26041c-17e4-4e2d-993d-04464e0ed15a)
+19:36:10 Result is kept for 500 seconds
+19:36:10 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.error.collect_error_snapshots'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (a441ec5c-876b-4bf7-8b2b-66663a8a3239)
+19:36:11 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (a441ec5c-876b-4bf7-8b2b-66663a8a3239)
+19:36:11 Result is kept for 500 seconds
+19:36:11 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.user_settings.sync_user_settings'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (280f3cfc-3622-40a6-a5dd-c06a0c2abb01)
+19:36:11 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (280f3cfc-3622-40a6-a5dd-c06a0c2abb01)
+19:36:11 Result is kept for 500 seconds
+19:36:11 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.link_count.update_link_count'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (a183497a-e53c-4c50-8d26-040d221fe92d)
+19:36:12 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (a183497a-e53c-4c50-8d26-040d221fe92d)
+19:36:12 Result is kept for 500 seconds
+19:36:12 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (8295d77a-a616-4b46-8f30-d07f431ec989)
+19:36:13 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (8295d77a-a616-4b46-8f30-d07f431ec989)
+19:36:13 Result is kept for 500 seconds
+19:36:13 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (14b0c6ab-6ebd-4304-90c6-89c146ec7efb)
+19:36:13 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (14b0c6ab-6ebd-4304-90c6-89c146ec7efb)
+19:36:13 Result is kept for 500 seconds
+19:36:13 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.razorpay_settings.razorpay_settin..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (40d91bc8-bb7d-44b5-9414-044b0abeb54a)
+19:36:14 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (40d91bc8-bb7d-44b5-9414-044b0abeb54a)
+19:36:14 Result is kept for 500 seconds
+19:36:14 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (e2d8072f-9c53-4a81-99aa-8175bf350c4e)
+19:36:15 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (e2d8072f-9c53-4a81-99aa-8175bf350c4e)
+19:36:15 Result is kept for 500 seconds
+19:36:15 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (66d94a8a-eae5-4bdd-8217-04dd23ac9aad)
+19:36:16 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (66d94a8a-eae5-4bdd-8217-04dd23ac9aad)
+19:36:16 Result is kept for 500 seconds
+19:36:16 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (2f974484-e559-40b2-a47d-82c10d0bba04)
+19:36:16 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (2f974484-e559-40b2-a47d-82c10d0bba04)
+19:36:16 Result is kept for 500 seconds
+19:36:16 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.twofactor.delete_all_barcodes_for_users'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (e610792c-8c33-4f65-b191-ce81ad2f6501)
+19:36:17 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (e610792c-8c33-4f65-b191-ce81ad2f6501)
+19:36:17 Result is kept for 500 seconds
+19:36:17 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.web_page.web_page.check_publish_status..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (e993dd0c-049b-4050-82df-6227306718bf)
+19:36:18 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (e993dd0c-049b-4050-82df-6227306718bf)
+19:36:18 Result is kept for 500 seconds
+19:36:18 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.oauth.delete_oauth2_data'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='site1.local', user='Administrator') (46e9b56b-4ab9-4132-8c2e-260064c13358)
+19:36:19 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (46e9b56b-4ab9-4132-8c2e-260064c13358)
+19:36:19 Result is kept for 500 seconds
+19:36:19 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', kwargs={'data': []}, method='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', site='site1.local', user='Administrator') (93d78bba-738c-46b9-a6a7-fc39f2940c71)
+19:36:19 Users-ridwankustanto-Code-sandbox-erpnext-coba-erp-next-semeru:default: Job OK (93d78bba-738c-46b9-a6a7-fc39f2940c71)
+19:36:19 Result is kept for 500 seconds
+19:36:40 Warm shut down requested
+19:36:40 Warm shut down requested
+19:36:40 Warm shut down requested

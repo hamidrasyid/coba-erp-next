@@ -1,0 +1,427 @@
+Exception in thread Thread-1:
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()    
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3718, in run
+self.run()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3718, in run
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 734, in can_read
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3617, in get_message
+Traceback (most recent call last):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    response = self.parse_response(block=False, timeout=timeout)
+    sock = self._connect()  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3503, in parse_response
+
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    if not block and not conn.can_read(timeout=timeout):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 321, in can_read
+    return _run_code(code, main_globals, None,
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    return self._buffer and self._buffer.can_read(timeout)    exec(code, run_globals)
+
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 230, in can_read
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    self._read_from_socket(timeout=timeout,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    main()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 829, in __call__
+    return self._parser.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 201, in _read_from_socket
+    return self.main(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1066, in invoke
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3617, in get_message
+Traceback (most recent call last):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/commands/scheduler.py", line 181, in start_worker
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3503, in parse_response
+    sock = self._connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    if not block and not conn.can_read(timeout=timeout):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 734, in can_read
+    return _run_code(code, main_globals, None,
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    return self._parser.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 321, in can_read
+    main()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name='bench')    
+return self._buffer and self._buffer.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 230, in can_read
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 829, in __call__
+    self._read_from_socket(timeout=timeout,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 201, in _read_from_socket
+    return self.main(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 782, in main
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    start_worker(queue, quiet = quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/background_jobs.py", line 156, in start_worker
+    rv = self.invoke(ctx)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level = logging_level)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 626, in work
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    self.register_death()Traceback (most recent call last):
+
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 4012, in execute
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/commands/scheduler.py", line 181, in start_worker
+        conn = self.connection_pool.get_connection('MULTI',start_worker(queue, quiet = quiet, rq_username=rq_username, rq_password=rq_password)
+
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/background_jobs.py", line 156, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level = logging_level)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 326, in register_death
+    connection.connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:11000. Connection refused.
+    p.execute()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 4012, in execute
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+    sock = self._connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+    connection.connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:11000. Connection refused.
+    return _run_code(code, main_globals, None,
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    main()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/commands/scheduler.py", line 181, in start_worker
+    start_worker(queue, quiet = quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/background_jobs.py", line 156, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level = logging_level)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:11000. Connection refused.
+19:34:41 Traceback (most recent call last):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/core/doctype/user/user.py", line 1184, in create_contact
+    contact.insert(ignore_permissions=True, ignore_links=ignore_links, ignore_mandatory=ignore_mandatory)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/model/document.py", line 229, in insert
+    self._validate_links()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/model/document.py", line 828, in _validate_links
+    frappe.throw(_("Could not find {0}").format(msg),
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/__init__.py", line 434, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/__init__.py", line 413, in msgprint
+    _raise_exception()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/__init__.py", line 367, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.LinkValidationError: Could not find User Id: admin@database.com
+
+objc[81249]: +[__NSCFConstantString initialize] may have been in progress in another thread when fork() was called.
+objc[81249]: +[__NSCFConstantString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+objc[81250]: +[__NSCFConstantString initialize] may have been in progress in another thread when fork() was called.
+objc[81250]: +[__NSCFConstantString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+objc[81253]: +[__NSCFConstantString initialize] may have been in progress in another thread when fork() was called.
+objc[81253]: +[__NSCFConstantString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+objc[82745]: +[__NSCFConstantString initialize] may have been in progress in another thread when fork() was called.
+objc[82745]: +[__NSCFConstantString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3718, in run
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3718, in run
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3617, in get_message
+    self.run()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3718, in run
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3503, in parse_response
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3617, in get_message
+    if not block and not conn.can_read(timeout=timeout):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 734, in can_read
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 3503, in parse_response
+    return self._parser.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._parser.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Traceback (most recent call last):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    main()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 782, in main
+Traceback (most recent call last):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+Traceback (most recent call last):
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 559, in connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    sock = self._connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 615, in _connect
+    exec(code, run_globals)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    main()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    raise err
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    main()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/commands/scheduler.py", line 181, in start_worker
+    start_worker(queue, quiet = quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/background_jobs.py", line 156, in start_worker
+    rv = self.invoke(ctx)
+      File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+Worker(queues, name=get_worker_name(queue_name)).work(logging_level = logging_level)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 626, in work
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/commands/scheduler.py", line 181, in start_worker
+    start_worker(queue, quiet = quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/background_jobs.py", line 156, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level = logging_level)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:11000. Connection refused.
+    click.Group(commands=commands)(prog_name='bench')
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/commands/scheduler.py", line 181, in start_worker
+    start_worker(queue, quiet = quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/apps/frappe/frappe/utils/background_jobs.py", line 156, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level = logging_level)
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:11000. Connection refused.
+    self.register_death()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/ridwankustanto/Code/sandbox/erpnext/coba-erp-next/semeru/env/lib/python3.9/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:11000. Connection refused.
